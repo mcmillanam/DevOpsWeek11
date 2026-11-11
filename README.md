@@ -44,3 +44,29 @@ Follow the Week 11 Individual Exercise document in `docs/`.
 - Do not commit `.env`.
 - Do not place database passwords in source code.
 - In the cloud dashboard, environment-variable names may be visible in screenshots, but secret values must be hidden.
+
+## UPDATE
+## Week 11 Cloud Deployment
+
+The Help Desk application is deployed to Render using Docker.
+
+### Deployment Information
+- Cloud Platform: Render
+- Application Version: 1.1.0
+- Region: Ohio (US East)
+- Database: Managed PostgreSQL
+- Runtime: Docker
+- Public URL: https://YOUR-SERVICE.onrender.com
+
+### Deployment Process
+1. Create a feature branch and make changes.
+2. Commit and push the changes to GitHub.
+3. Open a pull request.
+4. Verify GitHub Actions CI passes.
+5. Merge the pull request into main.
+6. Render deploys the updated application.
+7. Verify application health and database persistence.
+
+### Data Persistence
+Service requests are stored in managed PostgreSQL,
+allowing records to survive web service redeployments.
